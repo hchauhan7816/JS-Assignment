@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="./main.js"></script> -->
+    <title>Document</title>
+  </head>
+  <body class="secondFont">
+    <div class="container">
+      <h1>Register Train</h1>
+      <div class="train-container">
+        <form id="train-form">
+          <label for="train-type">Train Type</label>
+          <input type="text" id="train-type" placeholder="Train Type" />
+
+          <label for="train-name">Train Name</label>
+          <input type="text" id="train-name" placeholder="Train Name" />
+
+          <label for="train-from">From</label>
+          <input type="text" id="train-from" placeholder="From" />
+
+          <label for="train-to">To</label>
+          <input type="text" id="train-to" placeholder="To" />
+
+          <div class="form-buttons">
+            <button type="submit" class="submitBtn">Submit</button>
+            <button class="changeFontBtn" type="button">Toggle Font</button>
+          </div>
+        </form>
+
+        <table id="train-table">
+          <thead>
+            <tr>
+              <th style="width: 18%">Train Type</th>
+              <th style="width: 30%">Train Name</th>
+              <th style="width: 18%">From</th>
+              <th style="width: 18%">To</th>
+              <th style="width: 16%"></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <!-- Hello Page -->
+    <!-- <form action="">
+      <label for="cityName">City Name</label>
+      <input type="text" name="cityName" id="cityName" />
+      <button id="test" type="submit">click</button>
+    </form> -->
+
+    <div class="container">
+      <h1>Weather Website</h1>
+      <div class="weatherContainer">
+        <div class="weatherSearch">
+          <form>
+            <label for="cityName">Enter City Name:</label>
+            <input
+              type="text"
+              id="cityName"
+              name="cityName"
+              placeholder="e.g. Noida"
+            />
+            <button type="submit" id="getWeatherButton">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="weatherCard">
+          <div class="weatherHeader">
+            <h3 class="cityName">New York</h3>
+            <img
+              id="weatherImg"
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+              alt=""
+              width="90"
+              height="90"
+            />
+          </div>
+          <div class="weatherContent">
+            <h2 class="temperature">12°C</h2>
+            <div class="description">Light Rain</div>
+          </div>
+          <div class="weatherFooter">
+            <div class="weatherDetail">
+              <p>Humidity</p>
+              <p id="humidity">87%</p>
+            </div>
+            <div class="weatherDetail">
+              <p>Wind</p>
+              <p id="wind">12 km/h</p>
+            </div>
+            <div class="weatherDetail">
+              <p>Pressure</p>
+              <p id="pressure">1015 hPa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="weather-card">
+      <div class="weather-header">
+        <h2 class="city-name">New York</h2>
+        <img src="https://www.weatherbit.io/static/img/icons/r01d.png" alt="Rainy weather icon" class="weather-icon">
+      </div>
+      <div class="weather-info">
+        <p class="temperature">12°C</p>
+        <p class="description">Light Rain</p>
+      </div>
+      <div class="weather-footer">
+        <div class="weather-detail">
+          <p>Humidity</p>
+          <p>87%</p>
+        </div>
+        <div class="weather-detail">
+          <p>Wind</p>
+          <p>12 km/h</p>
+        </div>
+        <div class="weather-detail">
+          <p>Pressure</p>
+          <p>1015 hPa</p>
+        </div>
+      </div>
+    </div>
+     -->
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
